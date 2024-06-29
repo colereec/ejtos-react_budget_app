@@ -17,6 +17,9 @@ import ExpenseList from './components/ExpenseList';
 //Code to import AllocationForm.js
 import AllocationForm from './components/AllocationForm';
 
+//Code to import ChangeCurrency.js
+import ChangeCurrency from './components/ChangeCurrency';
+
 const App = () => {
     return (
         <AppProvider>
@@ -40,7 +43,13 @@ const App = () => {
                             <div className='col-sm'>
                             <ExpenseTotal />
                             </div>
-                        }        
+                        }
+                        {
+                            //ChangeCurrency component
+                            <div className='col-sm'>
+                            <ChangeCurrency />
+                            </div>
+                        }          
                 </div>
                 <h3 className='mt-3'>Allocation</h3> 
                 <div className='row'>  
