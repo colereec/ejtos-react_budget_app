@@ -11,8 +11,8 @@ const AllocationForm = (props) => {
 
     const submitEvent = () => {
 
-            if(!Number(cost)){
-                alert("The entered value must be a number or greater than zero!");
+            if(!Number(cost) | Number(cost) < 0){
+                alert("The entered value must be a number and greater than zero!");
                 setCost("");
                 return;
             }
